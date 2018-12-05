@@ -1,8 +1,11 @@
+#
 # Get help in R
-# How to find help in R
+#
+
+# Find help in R
 help()
 
-# Get general online help on R such as Manuals and References
+# Get online help on R such as Manuals and References
 help.start()
 
 # Get help on a topic or a function
@@ -12,7 +15,7 @@ help("mean")
 # Get an example on a topic or a function
 example("mean")
 
-# Search for a pattern in the R help
+# Search for a pattern in R help
 help.search("mean")
 
 # Get help on a package

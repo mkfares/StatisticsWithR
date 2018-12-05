@@ -1,19 +1,22 @@
-# R Workspace
+#
+# Working with R Workspace
+#
 
-# Print the current working directory
+# Print the current working directory (folder)
+# The working directory is shown on the console top bar in R Studio
 getwd()
 
-# Change to the directory where your data is stored
-# for macOS
+# Change the working directory (folder) on macOS
 setwd('/Users/user/Desktop/StatisticsWithR')
 
-# for Windows use / as a separator instead of \
+# Change the working directory on Windows
+# On Windows use "/" as a separator instead of "\"
 setwd('c:/users/user/Desktop/StatisticsWithR')
 
-# To set the default working directory
-# Tools > Global Options > Browse > Select a directory
+# Set the default working directory using R Studio GUI
+# Go to Tools > Global Options > Browse > Select a directory
 
-# List objects such as datasets and functions defined by the user in current session
+# List R objects such as datasets and functions defined by the user in the current session
 ls()
 
 # Save workspace objects in a file
@@ -21,6 +24,12 @@ save(women, file = "workspace.RData")
 
 # Load a saved workspace
 load(file = "workspace.RData")
+
+# Clean workspace from all data
+rm(list=ls())
+
+# List files and fodlers located in current directory
+dir()
 
 # Quit R
 quit()
