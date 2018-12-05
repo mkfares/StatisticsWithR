@@ -1,2 +1,6 @@
 # Statistics With R
-Introduction to statistics using the R language.
+
+In this repository you will find labs about various topics in statistics using the R language. 
+
+These tutorials are dedicated to people who want to lean statistics, R language, and data science.
+
