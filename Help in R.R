@@ -5,7 +5,7 @@
 # Find help in R
 help()
 
-# Get online help on R such as Manuals and References
+# Get help on R in HTML format
 help.start()
 
 # Get help on a topic or a function
@@ -24,6 +24,7 @@ help(package="ggplot2")
 # Search for help in R using regular expressions
 apropos('glm')
 help.search('model')
+??model
 
 # Vignettes
 # Opens a list of vignettes from all of your installed packages in your browser

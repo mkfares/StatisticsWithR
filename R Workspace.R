@@ -18,6 +18,7 @@ setwd('c:/users/user/Desktop/StatisticsWithR')
 
 # List R objects such as datasets and functions defined by the user in the current session
 ls()
+objects()
 
 # Save workspace objects in a file
 save(women, file = "workspace.RData")
@@ -25,8 +26,9 @@ save(women, file = "workspace.RData")
 # Load a saved workspace
 load(file = "workspace.RData")
 
-# Clean workspace from all data
-rm(list=ls())
+# Clean workspace from objects
+rm(list=ls())                   # remove all objects
+rm(object1, object2, object3)   # specify object to remove
 
 # List files and fodlers located in current directory
 dir()

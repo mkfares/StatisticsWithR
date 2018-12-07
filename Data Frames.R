@@ -4,10 +4,11 @@
 
 # Data frames are tables composed of columns or observations and rows or variables.
 
-# Properties of data frames
+# Properties of data frames:
 # Columns have names / headers / Titles
 # Rows have unique names or indexes
 # Data stored can be of any type
+# Values of the same column have the same data type
 
 # Create a data frame from vectors
 a <- c(1, 2, 3)
@@ -33,16 +34,17 @@ dim(df2)    # number of rows and columns
 head(df2)   # print first 6 rows
 tail(df2)   # print last 6 rows
 
-# Get headers/names of the columns
+# Get column names / headers / titles 
 names(df2)
 
-# Change names of a data frame
+# Change the column names of a data frame
 names(df2) <- c("AA", "BB", "CC")
 
-# Access a column by name
+# Access elements of a data frame
 # [[]] and $ return a vector
 # [] returns a data frame
 
+# Access a column by name
 trees$Height
 trees[["Height"]]
 
