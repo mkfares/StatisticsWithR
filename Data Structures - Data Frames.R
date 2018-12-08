@@ -1,5 +1,5 @@
 #
-# Data Frames
+# Data Structures - Data Frames
 #
 
 # Data frames are two dimensional structures composed of columns or observations and rows or variables.
@@ -16,7 +16,7 @@ b <- c("x", "y", "z")
 c <- c(TRUE, FALSE, TRUE)
 df1 <- data.frame(a, b, c)
 
-# Create a data frame with names
+# Create a named data frame
 df2 <- data.frame(A = a, B = b, C = c)
 
 # By default, data.frame() convert character vectors into factors
