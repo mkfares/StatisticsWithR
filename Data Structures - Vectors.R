@@ -27,6 +27,7 @@ v4 <- c(TRUE, FALSE, FALSE) # logical vector
 class(v1)
 
 # Check the length of a vector
+# The number of elements in the vector
 length(v1)
 
 # Nested vectors are always flat
@@ -63,10 +64,15 @@ as.character(v2)
 
 # Elementary arethmetic: +, -, *, /, ^ (raise to the power)
 y1 <- c(1, 2, 3, 4)
+y2 <- c(5, 6, 7, 8)
 2 * y1
 3 + y1
 y1 / 2
 3 * y1 + 4
+y1 + y2
+y1 - y2
+y1 * y2
+y1 / y2
 
 # Arithmetic functions
 # Example of functions: log, sqrt, cos, sin, tan
@@ -86,22 +92,30 @@ order(y1)
 # Build vectors from sequences
 z1 <- 1:10
 z2 <- seq(from = 2, to = 10, by = .5)
-class(z2)
+z3 <- seq(2, 10, length.out=4)
+class(z3)
 
-# Vector subsets
-z11 <- z1[2:8]    # Include elements 2 to 8
-z12 <- z1[-(1:6)] # Exclude elements 1 to 6
-z13 <- z1[z1>4]   # Include elements that verify the confition
+# Combine vectors
+z33 <- c(z1, z2)
 
-z3 <- c(1,2,3,NA)
-z3[is.na(z3)] <- 0 # Replace NA elements with 0
+# Access elements of a vector
+# In R the first index is 1 (not 0)
+z4 <- 11:14
+z4                  # Show elements
+z4[3]               # Show 3rd element
+z4[2:4]             # Range Index: Show 2nd, 3rd, and 4th elements
+z4[c(4,2, 3)]       # Show 4th, 7th and 3rd elements
+z4[-2]              # Show all element but 2nd element
+z4[-(1:3)]          # Show all elements but 1st to 3rd
+z4[c(TRUE,FALSE, FALSE, TRUE)] # Logical Index: show elements with TRUE value
+z4[z4 > 4]          # Logical Index: Show all elements that verify the confition
 
+# Out of range index
+z[100]      # NA
 
-# Matrices (2D, Homogeneous)
+# Modify elements of a vector
+z4[1] <- 21         # Replace 1st element with 21
+z4[z4 < 12] <- 22   # Replace element < 12 with 22
+z3[is.na(z3)] <- 0  # Replace NA elements with 0
 
-# Array (nD, Homogeneous)
-
-# Lists (1D, Heterogenous)
-# Lists are vectors but elements may have different data types
-
-# Data Frames (2D, Heterogenous)
+# Dot product

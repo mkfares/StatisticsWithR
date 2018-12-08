@@ -2,7 +2,7 @@
 # Data Frames
 #
 
-# Data frames are tables composed of columns or observations and rows or variables.
+# Data frames are two dimensional structures composed of columns or observations and rows or variables.
 
 # Properties of data frames:
 # Columns have names / headers / Titles
