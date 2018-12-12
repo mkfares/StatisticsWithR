@@ -1,5 +1,5 @@
 #
-# Working with R Workspace
+# R Workspace
 #
 
 # Print the current working directory (folder)
@@ -20,11 +20,19 @@ setwd('c:/users/user/Desktop/StatisticsWithR')
 ls()
 objects()
 
-# Save workspace objects in a file
-save(women, file = "workspace.RData")
+# Save the entire R workspace
+save.image(file = "workspace.RData")
 
-# Load a saved workspace
-load(file = "workspace.RData")
+# Save an object(s) 
+save(data1, file = "data1.RData")
+save(data1, data2, file = "data.RData")
+
+# Load saved workspace or object(s)
+load("worspace.RData")
+load("data.RData")
+
+# Source a file - Read R code from a file
+source("script-file.R", echo = TRUE)
 
 # Clean workspace from objects
 rm(list=ls())                   # remove all objects

@@ -10,11 +10,14 @@
 # Show desription of a data structure
 str(a)
 
-# Scalars (vectors or length one)
+# Scalars (vectors or length one). They are similar to simple variables
+a <- 1
+b <- "language"
 
 # Vectors (1D, Homogeneous)
 # This is also know as atomic vector
-# Elements of a vector should have the same data type
+# Elements of a vector have the same data type
+# There are no column or row vectors in R in the mathematical sense
 
 # Create a vector
 # c() is concatenate function

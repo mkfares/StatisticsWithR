@@ -21,7 +21,7 @@ help.search("mean")
 # Get help on a package
 help(package="ggplot2")
 
-# Search for help in R using regular expressions
+# Search for help in R using a pattern or a keyword
 apropos('glm')
 help.search('model')
 ??model
