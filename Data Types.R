@@ -4,13 +4,13 @@
 
 # Atomic types: integer, numeric, character, logical, complex, date
 
-# typeof() provides the (R internal) type or storage mode of an object 
+# typeof() provides the (R internal) type or storage mode of an object
 # class() provides high level data type (e.g. single and double are of class numeric)
 a <- 78
 typeof(a)
 class(a)
 
-# Integer mumbers
+# Integer numbers
 # Integers numbers ends with the letter L
 n1 <- 56L
 typeof(n1)
@@ -32,10 +32,10 @@ m3 <- Inf
 
 # Not a number
 m4 <- Inf/Inf
-m5 <- NaN     
+m5 <- NaN
 
 # Character
-# Use double or single quotes 
+# Use double or single quotes
 c1 <- "a"
 c2 <- "text here"
 c3 <- "34"

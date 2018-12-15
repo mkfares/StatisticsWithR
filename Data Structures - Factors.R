@@ -2,7 +2,7 @@
 # Data Structures - Factors
 #
 
-# factors are represenation of categorical variables
+# factors are representation of categorical variables
 # factors are stored in a vector
 # factors contains predefined values named levels
 # factors can be ordered or unordered (R always sorts levels in alphabetical order)
@@ -32,7 +32,7 @@ is.factor(df1$d2)
 df2 <- data.frame(d1, d2, stringsAsFactors = FALSE)
 str(df2)
 
-# Set predefined levels 
+# Set predefined levels
 f3 <- factor(c("medium", "low", "high", "high"))
 f3 <- factor(f3, levels = c("low", "medium", "high"))
 

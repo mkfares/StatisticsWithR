@@ -15,8 +15,8 @@
 # file: include the path to the file (file.choose() for interactivity)
 
 # Read files delimited by tabs using read.table().
-df <- read.table("filename.csv", 
-                 header = TRUE, 
+df <- read.table("filename.csv",
+                 header = TRUE,
                  sep = "\t")
 
 # Read CSV files (By default: sep = ",", header=TRUE, fill=True)

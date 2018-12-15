@@ -3,11 +3,11 @@
 #
 
 # Categories of data structures
-# Dimentiality: 1D, 2D, ...
+# Dimensionality: 1D, 2D, ...
 # Homogeneity: Elements have the same data type
 # Heterogeneity: Elements may have different data types
 
-# Show desription of a data structure
+# Show description of a data structure
 str(a)
 
 # Scalars (vectors or length one). They are similar to simple variables
@@ -42,7 +42,7 @@ is.integer(v1)
 is.numeric(v1)
 is.character(v3)
 
-# Coercion: combined types are converted to the most flexible: 
+# Coercion: combined types are converted to the most flexible:
 # Order from least to most flexible type: logical, integer, double, and character.
 y1 <- c(TRUE, 2L)
 str(y1)
@@ -65,7 +65,7 @@ as.character(v2)
 # It is recommended to have vectors with same length when performing operations between vectors
 # Vector with different length are recycled
 
-# Elementary arethmetic: +, -, *, /, ^ (raise to the power)
+# Elementary arithmetic: +, -, *, /, ^ (raise to the power)
 y1 <- c(1, 2, 3, 4)
 y2 <- c(5, 6, 7, 8)
 2 * y1
@@ -111,7 +111,7 @@ z4[c(4,2, 3)]       # Show 4th, 7th and 3rd elements
 z4[-2]              # Show all element but 2nd element
 z4[-(1:3)]          # Show all elements but 1st to 3rd
 z4[c(TRUE,FALSE, FALSE, TRUE)] # Logical Index: show elements with TRUE value
-z4[z4 > 4]          # Logical Index: Show all elements that verify the confition
+z4[z4 > 4]          # Logical Index: Show all elements that verify the condition
 
 # Out of range index
 z[100]      # NA

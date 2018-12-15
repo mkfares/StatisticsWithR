@@ -19,8 +19,8 @@ a3 <- rbind(v2, v3)
 
 # Access matrix elements: matrix[row, column]
 a1[2,1] # element in 2nd row, 1st column
-a1[2, ] # all elments of 2nd row
-a1[, 3] # all elements of 3rd colum
+a1[2, ] # all elements of 2nd row
+a1[, 3] # all elements of 3rd column
 
 a1[, c(1,3)] # all element of 1st and 3rd columns
 a1[-1, c(1,2)] # columns 1 and 2; exclude row 1
@@ -45,7 +45,7 @@ a1 * b1
 b1 - a1
 
 # Matrix multiplication
-a2 <- a1 
+a2 <- a1
 b2 <- t(b1)
 a2 %*% b2
 
@@ -57,7 +57,7 @@ solve(a)
 # Diagonal of a matrix
 diag(a)
 
-# Find eignevalues and eigenvectors of symetric matrix
+# Find eigenvalues and eigenvectors of symmetric matrix
 a <- matrix(c(1,2,2,1), nrow = 2, byrow = TRUE)
 x <- eigen(a)
 x$values

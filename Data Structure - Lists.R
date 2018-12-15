@@ -2,7 +2,7 @@
 # Data structures - Lists
 #
 
-# Lists are one dimensional structure with elements/components of different data tyeps
+# Lists are one dimensional structure with elements/components of different data types
 # Lists are equivalent to vectors but components may have different data types
 
 # Create a list
@@ -34,11 +34,11 @@ l2$skills[1]    # 1st element of the vector skills in list l2
 l2[["lname"]]
 
 # Difference between [[]] and [] operators
-# [[1]] Selects the first element of the list. 
+# [[1]] Selects the first element of the list.
 # [1] Select a sub-list consisting of the first element of the list. return a sub-list. Also called list slicing
 l1[1]
 l1[[1]]
-class(l1[1])   
+class(l1[1])
 class(l1[[1]])
 
 # Modify and add components

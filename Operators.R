@@ -4,7 +4,7 @@
 
 # Arithmetic operators
 # Addition: +
-# Substraction: -
+# Subtraction: -
 # Multiplication: *
 # Division: /
 # Integer division: %/%
@@ -12,10 +12,10 @@
 # Modulus: %%
 
 # Relational operators
-# Less than: < 
-# Less or equal to: <= 
+# Less than: <
+# Less or equal to: <=
 # Greater than: >
-# Greater or equal to: >= 
+# Greater or equal to: >=
 # Equal to: ==
 # Not equal to: !=
 

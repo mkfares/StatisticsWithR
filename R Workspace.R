@@ -23,7 +23,7 @@ objects()
 # Save the entire R workspace
 save.image(file = "workspace.RData")
 
-# Save an object(s) 
+# Save an object(s)
 save(data1, file = "data1.RData")
 save(data1, data2, file = "data.RData")
 
@@ -38,7 +38,7 @@ source("script-file.R", echo = TRUE)
 rm(list=ls())                   # remove all objects
 rm(object1, object2, object3)   # specify object to remove
 
-# List files and fodlers located in current directory
+# List files and folders located in current directory
 dir()
 
 # Quit R

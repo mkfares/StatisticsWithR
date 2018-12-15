@@ -14,7 +14,7 @@ data("women")
 # Get help on a dataset
 ?women
 
-# Show the structure and desription of a dataset
+# Show the structure and description of a dataset
 str(women)
 
 # Show the first observations (rows) in a dataset (default: show 6 rows)
@@ -38,4 +38,3 @@ summary(women)
 # View a dataset in a spreadsheet format in a separate tab
 # View starts with capital V
 View(women)
-

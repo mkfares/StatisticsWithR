@@ -2,7 +2,8 @@
 # Functions
 #
 
-# Function is a collection of instructions to perform a specific task.
+# Function is a set of instructions to perform a specific task
+# Function is an R object of class function
 # Function takes data as input and return a result as output
 # Function can be reused to perform the same task but with different inputs
 
@@ -10,12 +11,9 @@
 # Function may return results
 
 # Functions are part of packages
-# New functions may be created
+# New functions may be created by developer
 
 # Function syntax: function_name (argument1, argument2, ...)
-
-# Named arguments
-# Default arguments
 
 # Get help on a function
 ?mean
@@ -24,46 +22,72 @@
 ?`+`
 ?`==`
 
-# Call a function
-
-# Create a function named myfun
-myfun <- function()
+# Create a function named fun1
+fun1 <- function()
 {
     print("Hello, World")
 }
 
-# Call hello function
-myfun()
+# Call a function
+fun1()
 
 # Create a function with an argument
-myfun2 <- function(firstname)
+fun2 <- function(firstname)
 {
     print(firstname)
 }
 
-myfun2("myname")
+fun2("myname")
 
 a <- "myname here"
 myfun2(a)
 
-# Create function with multiple arguments
-myfun3 <- function(fname, lname) 
+# Create a function with multiple arguments
+fun3 <- function(fname, lname)
 {
     print (fname, lname)
 }
 
-# Call a function where the arguments keep the same position
-myfunc3("my firstname", "my lastname")
+# Arguments of a function can be matched by position
+# Arguments keep the same positions as in function definition
+func3("my firstname", "my lastname")
 
-# Call function where the arguments may have different position
-# Need to specify the name of the argument
-# Prefered way f calling functions with many arguments
-myfun3(lname = "my first", fname = "my last")
+# Arguments of a function can be matched by name
+# Arguments position may change but should be preceded by the argument names
+fun3(lname = "my first", fname = "my last")
 
-# Default values for arguments
+# It is recommended to keep the same position with arguments names
+func3(fname = "my firstname", lname = "my lastname")
 
 # Functions with default arguments
+func4 <- function(a, b = 0) {
+    a + b
+}
+
+func4(1, 2)  # a = 1, b = 2
+func4(1)     # a = 1, b = 0
+
+# The ... argument indicate a variable number of arguments that are usually passed on to other functions
+myplot <- function(x, y, type = "l", ...)
+{
+    plot(x, y, type = type, ...)
+}
 
 # Extra arguments
 
 # Return values
+# The return value is the last expression in the function body to be evaluated.
+func5 <- function(a, b) {
+    a + b
+}
+
+# Explicit return
+func6 <- function(a, b) {
+    return(a)
+    a + b
+}
+
+func6(1, 2)
+
+# Anonymous functions
+(function(a, b) {a + b}) (3, 4)
