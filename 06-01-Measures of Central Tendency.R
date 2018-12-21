@@ -66,3 +66,7 @@ quantile(rock$peri, probs = c(0.30, 0.60, 0.70))
 
 # Summary (min, 1st Quartile, Median, Mean, 3rd Quartile, Max)
 summary(rock$peri)
+
+# Returns Tukey's five number summary (minimum, lower-hinge, median, upper-hinge, maximum)
+# See boxplot graph
+fivenum(rock$shape)
