@@ -26,6 +26,16 @@ v2 <- c(4.5, 7, 9.3)        # numeric vector
 v3 <- c("string one", "string two", "string three")   # character vector
 v4 <- c(TRUE, FALSE, FALSE) # logical vector
 
+# Create vectors from sequences
+c1 <- seq(1, 5)
+c2 <- seq(1, 5, by = 2)
+c3 <- seq(1, 6, length = 10)
+
+# Create vectors from repetitions
+d1 <- rep(1, 6)             # repeat 1 six times
+d2 <- rep(2:5, 3)           # repeat the sequence 2,3,5 three times
+d3 <- rep(4:6, each = 2)    # repeat each element in the sequence two times
+
 # Check the data type of a vector
 class(v1)
 
@@ -120,5 +130,3 @@ z[100]      # NA
 z4[1] <- 21         # Replace 1st element with 21
 z4[z4 < 12] <- 22   # Replace element < 12 with 22
 z3[is.na(z3)] <- 0  # Replace NA elements with 0
-
-# Dot product
