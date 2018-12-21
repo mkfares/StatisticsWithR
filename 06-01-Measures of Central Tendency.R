@@ -3,19 +3,23 @@
 #
 
 # Load built-in data sample
-data("women")
+data("rock")
+str(rock)
 
 # Arithmetic mean
-mean(women$height)
+mean(rock$area)
 
 # Trim observations from both ends such as outliers
 # trim between 0 and 0.5 / 
-mean(women$height, trim = 0.2) # Trim 2 % from both ends
+mean(rock$area, trim = 0.2) # Trim 2 % from both ends
 
 # Ignore missing values (NA)
 x <- c(1, 2, 3, 4, NA)
 mean(x)
 mean(x, na.rm = TRUE)
+
+# Get the mean of multiple variables in a data frame
+sapply(rock, mean, na.rm = TRUE)
 
 # Weighted arithmeric mean for grouped data
 # x: values
@@ -25,7 +29,7 @@ w <- c(0.10, 0.15, 0.20, 0.25, 0.30)
 weighted.mean(x, w)
 
 # Median
-median(women$height)
+median(rock$shape)
 
 median(c(1:4))              # Even number
 median(c(100, 200, 300))    # Odd number
@@ -54,11 +58,11 @@ Modes(x)
 # Calculation types: 1 - 9 (Default type: 7; Minitab and SPSS: 6); 
 
 # Quartiles
-quantile(women$height) 
-quantile(women$height, probs = c(0, 0.25, 0.50, 0.75, 1))
+quantile(rock$peri) 
+quantile(rock$peri, probs = c(0, 0.25, 0.50, 0.75, 1))
 
 # Any percentiles
-quantile(women$height, probs = c(0.30, 0.60, 0.70))
+quantile(rock$peri, probs = c(0.30, 0.60, 0.70))
 
 # Summary (min, 1st Quartile, Median, Mean, 3rd Quartile, Max)
-summary(women$height)
+summary(rock$peri)
