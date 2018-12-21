@@ -9,4 +9,5 @@ These tutorials are dedicated to people who want to learn statistics, R language
 2. R Basics
 3. Data Structures
 4. Data
-5. Descriptive Statistics
+5. Flow Controls
+6. Descriptive Statistics
