@@ -1,5 +1,5 @@
 #
-# R Flow Controls
+# R Control Statements
 #
 
 # Conditional statments

@@ -1,5 +1,5 @@
 #
-# Missing Data
+# Missing Values
 #
 
 # Missing values are represented by NA for both numeric or character types
