@@ -5,7 +5,7 @@
 # List distributions in stats package
 help("Distributions")
 
-# First letter in distribution name
+# First letter in the distribution name
 # d: Determines the probability density function (pdf) at certain value(s)
 # p: Calculate the cumulative distribution probability (cdf) - prob. dist.
 # q: Calculates the pth quantile in a distribution (the inverse of cdf)
@@ -42,19 +42,18 @@ qnorm(0.5)  # z-score of 50th quantile (mean/median = 0)
 qnorm(0.95) # z-score of the 95th quantile
 qnorm(0.975) # z-score of 100% - 2.5% = 97.5%
 
-
 # Binomial Distribution (binom)
 # size: number of trials (Bernoulli distribution when n = 1)
 # prob: probability of success of a trial
 # mean: size*prob
 # variance: size*prob(1-prob)
 
-# Generate number of successes of independent trials
+# Generate a number of successes of independent trials
 rbinom(n=1, size = 10, prob = 0.4)
 rbinom(n=1, size = 1, prob = 0.4) # Bernoulli Distribution (size = 1)
 
 # probability density function (pdf) - probability distribution
-# Probability of 3 successes out of 10
+# Probability of obtaining three successes in 10 trials
 dbinom(x=3, size = 10, prob = 0.2)
 
 # cumulative distribution function (cdf)
