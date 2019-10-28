@@ -11,3 +11,4 @@ These tutorials are dedicated to people who want to learn statistics, R language
 4. Data
 5. Flow Controls
 6. Descriptive Statistics
+7. Distributions and Couting Rules
